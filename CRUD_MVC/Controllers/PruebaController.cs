@@ -6,7 +6,7 @@ namespace CRUD_MVC.Controllers
 {
     public class PruebaController : Controller
     {
-        // GET: PruebaController
+        // GET: PruebaController nombre del metodo
         public List<Prueba> ListadoUsuario()
         {
             return new List<Prueba>()
@@ -63,8 +63,8 @@ namespace CRUD_MVC.Controllers
         };
         }
 
-        // GET: PruebaController/Details/5
-        public ActionResult Layout()
+        // GET: PruebaController/Details/5 nombre de la vista
+        public ActionResult Prueba()
         {
             var usuarioList = ListadoUsuario().ToList();
             var modelUsuarios = new PruebaIndexModelView();
